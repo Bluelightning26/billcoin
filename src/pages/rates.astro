@@ -55,11 +55,16 @@ const exchangeRates = data.data as ExchangeRate[] || [];
     }
 
     .currency-card.blob {
-        width: 250px;
+        width: 15rem;
+        height: 20rem;
         aspect-ratio: 1;
-        border-radius: 50%;
-        corner-shape: squircle;
-        background: #8458ff;
+        clip-path: shape(from 59.25% 92.20%,curve to 34.28% 92.41% with 47.11% 96.01%,curve to 12.84% 78.17% with 21.45% 88.82%,curve to 5.25% 54.20% with 4.23% 67.52%,curve to 11.59% 29.17% with 6.27% 40.88%,curve to 28.14% 10.28% with 16.90% 17.46%,curve to 53.17% 3.20% with 39.38% 3.10%,curve to 76.22% 13.13% with 66.97% 3.29%,curve to 92.55% 34.50% with 85.47% 22.97%,curve to 95.67% 59.16% with 99.64% 46.02%,curve to 81.55% 80.35% with 91.70% 72.31%,curve to 59.25% 92.20% with 71.40% 88.40%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: background-color 0.3s, transform 0.3s;;
     }
 
 
@@ -67,8 +72,10 @@ const exchangeRates = data.data as ExchangeRate[] || [];
     .currency-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-        gap: 2rem;
+        gap: 4rem;
         justify-content: center;
+
+        justify-items: center;
     }
 
 
