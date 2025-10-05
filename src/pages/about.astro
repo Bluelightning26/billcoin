@@ -1,4 +1,5 @@
 ---
+import {LOCAL_PROVIDER_NAME} from "astro/dist/assets/fonts/constants";
 const pageTitle = "About Me";
 
 const identity = {
@@ -9,7 +10,12 @@ const identity = {
     country: "United States"
 }
 
+const showLocation = true;
 
+
+const happy = true;
+const finished = false;
+const grade = 3;
 ---
 <html lang="en">
 <head>
@@ -25,14 +31,18 @@ const identity = {
 <h2>... and my new Astro site!</h2>
 
 <h2>This website was made by {identity.firstName} {identity.lastName}!
-    Foreign currencies have piqued my intrest for as long as i can remember. <br>
-    I reside in {identity.location}, {identity.country}.<br>
+    Foreign currencies have piqued my intrest for as long as i can remember.
+    {showLocation && <p>I reside in {identity.location}, {identity.country}.</p>}
     My interests include {identity.interests.join(", ")}.
     My favorite of them include {identity.interests[0]} and {identity.interests[2]}.
 
 
 
+    {happy && <p>I am happy to be learning Astro!</p>}
 
+    {finished && <p>I finished this tutorial!</p>}
+
+    {grade === 3 ? <p>I am in high school</p> : <p>I am not in high school</p>}
 </h2>
 </body>
 </html>
