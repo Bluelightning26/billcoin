@@ -1,21 +1,38 @@
 ---
+const pageTitle = "About Me";
+
+const identity = {
+    firstName: "Dhyan",
+    lastName: "S",
+    interests: ["space", "sports", "programming", "engineering"],
+    location: "Boston, Massachusetts",
+    country: "United States"
+}
+
 
 ---
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{pageTitle}</title>
+</head>
 <body>
-
 <a href="/">Home</a>
 <a href="/about/">About</a>
-<a href="/bills/">Bills</a>
-<h1>Bills and Coins</h1>
-How did we end up here?
+<a href="/blog/">Blog</a>
+<h1>{pageTitle}</h1>
+<h2>... and my new Astro site!</h2>
 
-United States
------
-Local Era
-Formation of the National Bank
-Transit / other numismatics
-Today
-
+<h2>This website was made by {identity.firstName} {identity.lastName}!
+    Foreign currencies have piqued my intrest for as long as i can remember. <br>
+    I reside in {identity.location}, {identity.country}.<br>
+    My interests include {identity.interests.join(", ")}.
+    My favorite of them include {identity.interests[0]} and {identity.interests[2]}.
 
 
+
+
+</h2>
 </body>
+</html>
