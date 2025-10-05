@@ -1,5 +1,6 @@
 ---
 import {LOCAL_PROVIDER_NAME} from "astro/dist/assets/fonts/constants";
+import '../styles/global.css';
 const pageTitle = "About Me";
 
 const identity = {
@@ -7,8 +8,19 @@ const identity = {
     lastName: "S",
     interests: ["space", "sports", "programming", "engineering"],
     location: "Boston, Massachusetts",
-    country: "United States"
+    country: "United States",
 }
+
+const skills = ["Java", "YAML", "Markdown", "HTML", "CSS", "Astro!!"];
+
+const skillColor = "green";
+const skillColorListTest = {
+    Java: "red",
+    YAML: "blue",
+    Markdown: "green",
+    HTML: "orange",
+    CSS: "purple",
+    Astro: "cyan"}
 
 const showLocation = true;
 
@@ -16,6 +28,8 @@ const showLocation = true;
 const happy = true;
 const finished = false;
 const grade = 3;
+
+
 ---
 <html lang="en">
 <head>
@@ -36,6 +50,11 @@ const grade = 3;
     My interests include {identity.interests.join(", ")}.
     My favorite of them include {identity.interests[0]} and {identity.interests[2]}.
 
+    <p>Few skills from most to lease favorite:</p>
+    <ul>
+        {skills.map((skill) => <li class="skill">{skill}</li>)}
+    </ul>
+
 
 
     {happy && <p>I am happy to be learning Astro!</p>}
@@ -46,3 +65,18 @@ const grade = 3;
 </h2>
 </body>
 </html>
+
+<style define:vars={{skillColor}}>
+    h1 {
+        color: purple;
+        font-size: 4rem;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 2rem;
+    }
+    .skill {
+        font-weight: bold;
+        color: var(--skillColor);
+    }
+</style>
