@@ -4,5 +4,22 @@ const username = "bluelightning26";
 ---
 
 <footer>
-    <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+    <p>Open Source on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
 </footer>
+
+<style>
+    footer {
+        text-align: center;
+        padding: 1rem;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    footer a {
+        text-decoration: underline;
+    }
+    footer a:hover {
+        color: #181825;
+    }
+</style>

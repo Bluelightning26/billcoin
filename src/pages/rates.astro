@@ -1,0 +1,105 @@
+---
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import Base from '../components/Base.astro';
+import Layout from '../layouts/Layout.astro';
+
+const pageTitle = "Intrernational Info";
+
+// Define interface for rate data
+interface ExchangeRate {
+    country: string;
+    currency: string;
+    exchange_rate: string;
+}
+
+const response = await fetch('https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/rates_of_exchange');
+const data = await response.json();
+const exchangeRates = data.data as ExchangeRate[] || [];
+
+---
+<Base />
+<navigation />
+
+
+
+<html lang="en">
+<body>
+    <h1>{pageTitle}</h1>
+
+        <h2>Exchange Rates to USD</h2>
+        <div class="currency-grid">
+            {exchangeRates.map((rate: ExchangeRate) => (
+                    <div class="currency-card">
+                        <h3>{rate.country}</h3>
+                        <p><strong></strong> {rate.currency}</p>
+                        <p><strong>Exchange Rate:</strong> {rate.exchange_rate} / 1$ USD</p>
+                    </div>
+            ))}
+    </div>
+</body>
+
+
+
+<style>
+
+
+    .currency-card {
+        border-radius: 8px;
+        padding: 1rem;
+        grid-column: span 1;
+        background-color: #89dceb;;
+    }
+
+
+
+    .currency-grid {
+        display: grid;
+        row-gap: 2em;
+        grid-template-columns: repeat(7, minmax(10rem, 4fr));
+        gap: 2rem;
+        margin-top: 2rem;
+        justify-content: center;
+    }
+
+
+
+    @media (max-width: 1600px) {
+        .currency-grid {
+            grid-template-columns: repeat(6, minmax(10rem, 1fr));
+        }
+    }
+
+    @media (max-width: 1400px) {
+        .currency-grid {
+            grid-template-columns: repeat(5, minmax(10rem, 1fr));
+        }
+    }
+
+    @media (max-width:1200px) {
+        .currency-grid {
+            grid-template-columns: repeat(4, minmax(10rem, 1fr));
+        }
+    }
+
+    @media (max-width:1000px) {
+        .currency-grid {
+            grid-template-columns: repeat(3, minmax(10rem, 1fr));
+        }
+    }
+
+    @media (max-width: 800px) {
+        .currency-grid {
+            grid-template-columns: repeat(2, minmax(10rem, 1fr));
+        }
+    }
+
+
+    .currency-card:hover {
+        background-color: #e0e0e0;
+        transform: translateX(-4px);
+    }
+
+
+    </style>
