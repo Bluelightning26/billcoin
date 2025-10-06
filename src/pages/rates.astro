@@ -1,8 +1,4 @@
 ---
-import '../styles/global.css';
-import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
-import Base from '../components/Base.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const pageTitle = "International Info";
@@ -19,16 +15,7 @@ const data = await response.json();
 const exchangeRates = data.data as ExchangeRate[] || [];
 
 ---
-<Base />
-<Navigation />
-
-
-
-<html lang="en">
-<body>
-
-    <h1>{pageTitle}</h1>
-
+<BaseLayout pageTitle={pageTitle}>
         <h2>Exchange Rates to USD</h2>
         <p style="font-size: 80%; margin: 0%; padding: 0:">data sourced from treasury.gov</p>
         <div class="currency-grid">
@@ -40,12 +27,8 @@ const exchangeRates = data.data as ExchangeRate[] || [];
                     </div>
             ))}
     </div>
+</BaseLayout>
 
-
-</body>
-
-
-<Footer />
 <style>
 
 
