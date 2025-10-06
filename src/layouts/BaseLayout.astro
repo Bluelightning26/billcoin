@@ -1,0 +1,30 @@
+---
+import Base from '../components/Base.astro';
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+
+
+const pageTitle = "American";
+
+---
+
+<Base />
+<Navigation />
+
+
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} >
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+		<h1>{pageTitle}</h1>
+
+	<Footer />
+	</body>
+</html>
