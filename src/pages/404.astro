@@ -1,6 +1,27 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Error: 404";
 ---
-<body>
-  <h1>404</h1>
-  <p>Lost? Home: <a href="/">here</a></p>
+<BaseLayout pageTitle={pageTitle}>
+  <h2>Oops! That page doesn't exist</h2>
+  Seems like you got lost somewhere, here's a dino to cheer you up!
+
+  <img src="https://hackclub.com/404/dinobox.svg" alt="dinobox" />
+
+</BaseLayout>
+
+<style>
+img {
+  display: block;
+  margin-top: 1rem;
+  background: black;
+  width: 20rem;
+  aspect-ratio: 1;
+  border-radius: 8px;
+}
+
+img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+</style>
