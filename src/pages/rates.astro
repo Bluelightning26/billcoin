@@ -17,7 +17,7 @@ const exchangeRates = data.data as ExchangeRate[] || [];
 ---
 <BaseLayout pageTitle={pageTitle}>
         <h2>Exchange Rates to USD</h2>
-        <p style="font-size: 80%; margin: 0%; padding: 0:">data sourced from treasury.gov</p>
+        <p style="font-size: 80%;">data sourced from treasury.gov</p>
         <div class="currency-grid">
             {exchangeRates.map((rate: ExchangeRate) => (
                     <div class="currency-card blob">
@@ -28,6 +28,8 @@ const exchangeRates = data.data as ExchangeRate[] || [];
             ))}
     </div>
 </BaseLayout>
+
+
 
 <style>
 
