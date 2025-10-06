@@ -19,3 +19,4 @@ The oldest one we know of is from the 7th Century Tang Dynasty in China.
 
 >"Merchants would issue what are today called promissory notes in the form of receipts of deposit to wholesalers to avoid using the heavy bulk of copper coinage in large commercial transactions."
 > -wikipedia
+> 
