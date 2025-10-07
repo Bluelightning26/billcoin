@@ -15,7 +15,7 @@ each colony/state/territory viewed themselves as separate entities.
 Therefore there never was a unified currency, it was common to trade with British pounds, Spanish dollars, Dutch guilders, and various other coinage.
 
 
-(ai line)
+*The following content is temporarily summarized by AI as a proof of concept. All other content has been written by me.*
 
 Along with this lack of a unified currency, each colony often issued its own paper money or used commodity-based systems like tobacco or wampum as a medium of exchange. This created significant confusion and instability in trade, as the value of these currencies varied widely from one region to another. Inflation and counterfeiting were also rampant, further undermining public trust in local money.
 
