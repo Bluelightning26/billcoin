@@ -22,7 +22,7 @@ The oldest one we know of is from the 7th Century Tang Dynasty in China.
 >"Merchants would issue what are today called promissory notes in the form of receipts of deposit to wholesalers to avoid using the heavy bulk of copper coinage in large commercial transactions."
 > -wikipedia
 
-_The following content is temporarily summarized by AI. All other content has been written by me._
+_The following content is temporarily summarized by AI as a proof of concept. All other content has been written by me._
 
 
 ### What Exactly Is Paper Money?
