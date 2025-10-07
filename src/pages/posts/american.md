@@ -12,12 +12,19 @@ tags:
 
 Prior to the American Revolution and the ensuing years that brought the United States into a cohesive entity, 
 each colony/state/territory viewed themselves as separate entities. 
-Therefore there never was a unified currency, it was common to trade with British pounds, Spanish dollars, Dutch guilders, and various other coinage.
+Therefore there never was a unified currency, it was common to trade with British pounds, Spanish dollars, Dutch guilders, and various other local coinage.
+
+
+Each colony often issued its own paper money or used other trade-based systems like tobacco or whiskey as a medium of exchange. The existence of hundreds of currencies didn't help any of them have much value, as money only has value if everyone believes it does.
+The value of these currencies varied widely from one region to another. 
+
+I, myself have one of these bills from The Massachusetts Bay Colony, dated 1786.
+![](https://hc-cdn.hel1.your-objectstorage.com/s/v3/dd43190f68ebb0de27fa3d6a46c660b96f1bcf99_remove_background_preview.png)
+
+Inflation and counterfeiting were also rampant, further undermining public trust in local money.
 
 
 *The following content is temporarily summarized by AI as a proof of concept. All other content has been written by me.*
-
-Along with this lack of a unified currency, each colony often issued its own paper money or used commodity-based systems like tobacco or wampum as a medium of exchange. This created significant confusion and instability in trade, as the value of these currencies varied widely from one region to another. Inflation and counterfeiting were also rampant, further undermining public trust in local money.
 
 It wasn’t until the Revolutionary War that the Continental Congress attempted to introduce a standardized currency—the Continental dollar—but it quickly depreciated due to overprinting and lack of backing by gold or silver. This experience demonstrated the urgent need for a centralized financial system. Eventually, after the adoption of the U.S. Constitution, the federal government gained the sole authority to coin money and regulate its value, paving the way for the creation of a stable national currency and the foundations of the modern American financial system.
 
